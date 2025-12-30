@@ -1,0 +1,151 @@
+/* بسم الله الرحمن الرحيم */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+}
+
+header {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  top: 0;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.582);
+  text-decoration: none;
+}
+
+.logoImg {
+  width: 180px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  margin-right: 200px;
+  margin-left: 100px;
+}
+
+nav p {
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  padding: 0px 0px 4px 0px;
+  transition: 120ms;
+}
+
+nav p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  border-bottom: 3px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav p:hover {
+  color: rgba(255, 255, 255, 0.918);
+}
+
+nav p:hover::after {
+  width: 100%;
+}
+
+.home {
+  cursor: default;
+  scale: 1.3;
+  color: rgba(255, 255, 255, 0.918);
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 3px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.home:focus::after {
+  width: 100%;
+}
+
+.bagDiv {
+  display: flex;
+  align-items: center;
+}
+
+i {
+  color: rgba(255, 255, 255, 0.596);
+  font-size: 35px;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+i:hover {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  display: flex;
+  cursor: pointer;
+}
+
+main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 40px;
+  padding: 80px 100px 10px 100px;
+  background-image: url(bcg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-top: 80px;
+}
+
+.logoBig {
+  width: 240px;
+  margin-left: auto;
+  margin-right: 700px;
+}
+
+.content {
+  width: 60%;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.info {
+  font-size: 12px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
