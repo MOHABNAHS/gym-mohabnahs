@@ -1,0 +1,209 @@
+/* بسم الله الرحمن الرحيم */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+header {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    gap: 170px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.582);
+    text-decoration: none;
+}
+
+.logoImg {
+    width: 180px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    margin-right: 200px;
+    margin-left: 100px;
+}
+
+header nav p {
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    padding: 0px 0px 4px 0px;
+    transition: 120ms;
+}
+
+header nav p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+header nav p:hover {
+    color: rgba(255, 255, 255, 0.918);
+}
+
+header nav p:hover::after {
+    width: 100%;
+}
+
+.home {
+    cursor: default;
+    scale: 1.3;
+    color: rgba(255, 255, 255, 0.918);
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.home:focus::after {
+    width: 100%;
+}
+
+.bagDiv {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 35px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    display: flex;
+    cursor: pointer;
+}
+
+.contact {
+    cursor: default;
+    scale: 1.3;
+    color: rgba(255, 255, 255, 0.918);
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.contact:focus::after {
+    width: 100%;
+}
+
+main {
+    background-image: url(bcg-contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 81.6vh;
+}
+
+.nice {
+    color: white;
+    font-size: 40px;
+    transform: translateY(50px);
+}
+
+.forContact {
+    font-size: 50px;
+    color: white;
+    transform: translateY(50px);
+}
+
+.navMain {
+    gap: 20px;
+    width: 50%;
+    transform: translateY(150px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.gmail::after {
+    content: ' example@gmail.com';
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.insta::after {
+    content: ' example123';
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.whats::after {
+    content: ' +20 123456789';
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.gmail:hover::after {
+    color: white;
+}
+
+.insta:hover::after {
+    color: white;
+}
+
+.whats:hover::after {
+    color: white;
+}
