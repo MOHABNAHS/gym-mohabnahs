@@ -18,7 +18,7 @@ header {
   width: 100%;
   background-color: black;
   top: 0;
-  gap:170px;
+  gap: 170px;
 }
 
 a {
@@ -304,9 +304,8 @@ main {
   font-size: 20px;
 }
 
-.icon3::after{
+.icon3::after {
   content: 'Daily Follow-ups';
   margin-left: 10px;
   font-size: 20px;
-
 }
